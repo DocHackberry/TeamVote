@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<!-- define angular app -->
+<html ng-app="TeamVote">
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" />
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="content/custom.css" />
+	<script type="text/javascript" src="scripts/TeamVote.js"></script>
+</head>
+<!-- define angular controller -->
+<body ng-app="jiraPM" ng-controller="mainPage">
+ <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Team Vote</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#history">History</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+			<div ng-view></div>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Created by <span style="font-style: italic;">Team Awesome</span></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</body>
+</html>
